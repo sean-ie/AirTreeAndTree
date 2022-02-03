@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   def index
-    bookings = Bookings.all
+    @booking = Bookings.all
   end
 
   def show
@@ -13,6 +13,10 @@ class BookingsController < ApplicationController
   end
 
   def create
+    @booking = Booking.new(booking_params)
+    @booking.user = current_user
+    @booking.tree = Tree.find(params[:tree_id])
+    @booking.save!
   end
 
   def destroy
@@ -21,7 +25,8 @@ class BookingsController < ApplicationController
   end
 end
 
+private
 #params id for create method. Tree controller
-#def booking_params
-    #params.require(:restaurant).permit(:name, :rating, :address)
-#end
+def booking_params
+  params.require(:booking).permit(:start_date, :end_date)
+end

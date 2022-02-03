@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2022_02_01_191401) do
   create_table "bookings", force: :cascade do |t|
     t.datetime "start_date", precision: 6
     t.datetime "end_date", precision: 6
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "trees", force: :cascade do |t|
