@@ -3,5 +3,5 @@ class Tree < ApplicationRecord
   validates :price, presence: true, numericality: true
   validates :number_of_guests, presence: true, numericality: true
   has_many :bookings
-  has_many :users, through: :bookings   
+  belongs_to :user  
 end

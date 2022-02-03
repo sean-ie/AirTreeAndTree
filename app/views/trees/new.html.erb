@@ -1,0 +1,10 @@
+<h1>Create a new Treehouse</h1>
+<%= simple_form_for [ @tree ] do |f| %>
+<%= f.input :name %>
+<%= f.input :description %>
+<%= f.input :address %>
+<%= f.input :price %>
+<%= f.input :number_of_guests %>
+<%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
+
