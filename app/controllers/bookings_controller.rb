@@ -13,7 +13,7 @@ class BookingsController < ApplicationController
   end
 
   def create
-  end 
+  end
 
   def destroy
     @booking = Booking.find(params[:id])
@@ -24,5 +24,4 @@ end
 #params id for create method. Tree controller
 #def booking_params
     #params.require(:restaurant).permit(:name, :rating, :address)
-  end
 #end
