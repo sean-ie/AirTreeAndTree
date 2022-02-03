@@ -9,10 +9,12 @@
 }
 
 .banner-new {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url("Treehouse_home_page.jpeg");
-  background-position: center;
+  object-fit: fill;
+
+
 }
 
 .btn-red {
