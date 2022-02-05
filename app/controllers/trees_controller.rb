@@ -35,11 +35,10 @@ class TreesController < ApplicationController
   private
 
   def tree_params
-    params.require(:tree).permit(:name, :description, :price, :address, :number_of_guests)
+    params.require(:tree).permit(:name, :description, :price, :address, :number_of_guests, :photo )
   end
 
   def find_tree
     @tree = Tree.find(params[:id])
   end
 end
-
