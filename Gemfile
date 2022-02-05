@@ -13,6 +13,10 @@ gem "sprockets-rails"
 
 gem 'devise'
 
+gem 'cloudinary', '~> 1.16.0'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
