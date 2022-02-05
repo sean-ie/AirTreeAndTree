@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.4"
 
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.1"
 
@@ -10,6 +12,10 @@ gem "rails", "~> 7.0.1"
 gem "sprockets-rails"
 
 gem 'devise'
+
+gem 'cloudinary', '~> 1.16.0'
+
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
