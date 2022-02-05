@@ -40,6 +40,6 @@ class TreesController < ApplicationController
 
   def find_tree
     @tree = Tree.find(params[:id])
-
   end
 end
+
