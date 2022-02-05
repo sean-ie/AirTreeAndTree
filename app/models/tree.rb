@@ -4,5 +4,5 @@ class Tree < ApplicationRecord
   validates :number_of_guests, presence: true, numericality: true
   has_many :bookings
   belongs_to :user
-  has_many_attached :photos, dependent: :destroy
+  has_one_attached :photo
 end
