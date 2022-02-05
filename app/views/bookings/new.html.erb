@@ -1,0 +1,5 @@
+<h1>Book your Treehouse</h1>
+<%= simple_form_for [ @tree, @booking ] do |f| %>
+<%= f.input :start_date, as: :string, input_html: {class: "datepicker", style: "border-radius: 20px;" }  %>
+<%= f.input :end_date, as: :string, input_html: {class: "datepicker", style: "border-radius: 20px;" }  %> 
+<%= f.input :photo, as: :file, input_html: { multiple: true } %> 
