@@ -46,7 +46,7 @@ tree1 = Tree.new(
   number_of_guests: 10,
   user_id: user.id
 )
-  tree3.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1644338910/qing-zhang-qinger_zhang-Vpo7XGfd4tE-unsplash_zcj4y3.jpg'), filename: 'tree.png', content_type: 'image/png')
+  tree3.photo.attach(io: URI.open('https://res.cloudinary.com/dnorywpdz/image/upload/v1644338907/roberto-nickson-6FZf3yzuodE-unsplash_uguigj.jpg'), filename: 'tree.png', content_type: 'image/png')
   tree3.save!
 
   tree4 = Tree.new(
