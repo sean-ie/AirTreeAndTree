@@ -1,6 +1,13 @@
 .navbar-tree {
   justify-content: space-between;
   background: white;
+  opacity: 0.6;
+  border: solid; color: aqua;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
 }
 
 .navbar-tree .navbar-collapse {
