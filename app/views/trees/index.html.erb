@@ -1,19 +1,18 @@
-<div>
-  <h1>Check out our trees</h1>
-</div>
-
   <div class="container">
-    <div class="card">
     <% @trees.each do |tree| %>
       <div class="card">
-      <h1><%= tree.name  %></h1>
-        <p><%= tree.description %></p>
-        <% if tree.photo.attached? %>
-        <%= cl_image_tag(tree.photo.key) %>
+        <div class="card-pic">
+          <% if tree.photo.attached? %>
+          <%= cl_image_tag(tree.photo.key) %>
+        </div>
         <% end %>
-        <p>Number of Guests: <%= tree.number_of_guests %></p>
-        <p>Price: <%= tree.price %></p>
-        <p>Rating: <%= tree.rating %></p>
+        <div class="card-content">
+          <p><%= tree.name  %></p>
+          <p><%= tree.description %></p>
+          <p>Number of Guests: <%= tree.number_of_guests %></p>
+          <p>Price: <%= tree.price %></p>
+          <p>Rating: <%= tree.rating %></p>
+        </div>
       </div>
     <% end %>
   </div>
