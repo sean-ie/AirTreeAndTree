@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-tree">
-  <%= link_to root_path, class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand a:hover" do %>
     <%= image_tag "treehouse_1.png" %>
   <% end %>
 
@@ -10,17 +10,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item link-font active">
         <%= link_to "Book a Treehouse", trees_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item link-font">
         <%= link_to "List a Treehouse", trees_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item link-font">
         <%= link_to 'My Bookings', bookings_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "My Listings", trees_path, class: "nav-link" %>
+      <li>
+        <img class="avatar" link_to bookings_path, alt="avatar" src="https://kitt.lewagon.com/placeholder/users/SimDhali">
       </li>
     </ul>
   </div>

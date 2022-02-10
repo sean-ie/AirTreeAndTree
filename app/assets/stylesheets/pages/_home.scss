@@ -1,5 +1,11 @@
 // Specific CSS for your home-page
 
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: whitesmoke;
+  font-weight: 800;
+  text-shadow: 2px 2px 7px #000000;
+}
 
 .notice {
   height: auto;
@@ -20,6 +26,13 @@ a {
     color: whitesmoke;
     text-decoration: none;
     background-color: transparent;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.a-nav-link {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .banner-new {
@@ -28,15 +41,16 @@ a {
   background-image: url("Treehouse_home_page.jpeg");
   background-position: center;
   position: relative;
-  border: solid; color: red;
+  // border: solid; color: red;
   margin-top: 0;
 }
 
 .btn-red {
-  background-color: rgba(21, 255, 0, 0.6);
+  background-color: rgba(46, 248, 255, 0.1);
   color: whitesmoke;
   padding: 16px 32px;
   border-radius: 8px;
+  border: solid; color: antiquewhite;
 }
 
 .text-center {
