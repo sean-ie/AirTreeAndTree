@@ -1,4 +1,12 @@
 // Specific CSS for your home-page
+
+
+.notice {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
 #banner {
   width: 1000px;
   height: 700px;
@@ -8,15 +16,24 @@
   background-size: cover;
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .banner-new {
   width: 100%;
   height: 100vh;
   background-image: url("Treehouse_home_page.jpeg");
   background-position: center;
+  position: relative;
+  border: solid; color: red;
+  margin-top: 0;
 }
 
 .btn-red {
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(21, 255, 0, 0.6);
   color: whitesmoke;
   padding: 16px 32px;
   border-radius: 8px;

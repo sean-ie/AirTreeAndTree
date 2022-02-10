@@ -1,18 +1,18 @@
-<div>
-  <center><h1>Check out our trees</h1></center>
-</div>
-
-  <% console %>
-
-  <div class="main-grid">
+  <div class="container">
     <% @trees.each do |tree| %>
-      <div class="card" style="width: 18rem;">
-      <h1><%= tree.name  %></h1>
-        <p>Description: <%= tree.description %></p>
-        <% if tree.photo.attached? %>
-        <%= cl_image_tag(tree.photo.key) %>
+      <div class="card">
+        <div class="card-pic">
+          <% if tree.photo.attached? %>
+          <%= cl_image_tag(tree.photo.key) %>
+        </div>
         <% end %>
-        <p>Number of Guests: <%= tree.number_of_guests %></p>
+        <div class="card-content">
+          <p><%= tree.name  %></p>
+          <p><%= tree.description %></p>
+          <p>Number of Guests: <%= tree.number_of_guests %></p>
+          <p>Price: <%= tree.price %></p>
+          <p>Rating: <%= tree.rating %></p>
+        </div>
       </div>
     <% end %>
   </div>
