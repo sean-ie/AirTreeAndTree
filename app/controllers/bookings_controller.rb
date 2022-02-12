@@ -16,8 +16,13 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @booking.user = current_user
-    @booking.tree = Tree.find(params[:tree_id])
-    @booking.save!
+    # @booking.tree = Tree.find(params[:tree_id])
+
+  if @booking.save
+    redirect_to booking_path(@booking)
+  else
+    render "new"
+  end
   end
 
   def destroy
@@ -29,5 +34,5 @@ end
 private
 #params id for create method. Tree controller
 def booking_params
-  params.require(:booking).permit(:start_date, :end_date)
+  params.require(:booking).permit(:start_date, :end_date, :tree_id)
 end

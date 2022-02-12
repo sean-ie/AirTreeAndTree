@@ -11,8 +11,9 @@
     <%= simple_form_for [ @tree, @booking ] do |f| %>
     <%= f.input :start_date, as: :date, html5:true %>
     <%= f.input :end_date, as: :date, html5: true %>
-    <center><%= f.submit "Book", class: "btn btn-success" %></center>
+    <%# <center><%= f.submit "Book", class: "btn btn-success" %>
     <% end %>
+    <%= link_to "Book", booking_confirmation_path %>
   </div>
   <br>
  <center><%= link_to "Back", trees_path, class: "btn btn-success" %></center>
