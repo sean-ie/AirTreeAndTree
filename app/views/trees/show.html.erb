@@ -1,0 +1,16 @@
+<br>
+<br>
+<br>
+<br>
+<div>
+<h1><%= @tree.name %></h1>
+<ul>
+<% if @tree.photo.attached? %>
+  <%= cl_image_tag(@tree.photo.key, width: 400, height: 300, crop: :fill) %>
+   <% end %>
+<li>Treehouse Address --> 🏡 <%= @tree.address %></li>
+<li>Price --> 💰 £ <%= @tree.price %></li>
+<li>Description --> 📖 <%= @tree.description %></li>
+<li>Number of Guests --> 👩🏻‍🤝‍👨🏼 <%= @tree.number_of_guests %></li>
+</ul>
+  </div>
