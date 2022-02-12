@@ -10,6 +10,7 @@ class BookingsController < ApplicationController
   def new
     #fetches an empty form
     @booking = Booking.new
+    @tree = Tree.find(params[:tree_id])
   end
 
   def create
