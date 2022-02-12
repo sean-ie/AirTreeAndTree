@@ -9,6 +9,8 @@
           <p>Number of Guests: <%= tree.number_of_guests %></p>
           <p>Price: <%= tree.price.to_i %></p>
           <p>Rating: <%= tree.rating %></p>
+
+          <%= link_to "Book a Treehouse", tree_path(tree), class:"btn-red" %>
           <h4 class="btn-card">Book</h4>
           </div>
         </div>
