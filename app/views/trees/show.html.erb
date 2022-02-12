@@ -8,9 +8,9 @@
 <% if @tree.photo.attached? %>
   <%= cl_image_tag(@tree.photo.key, width: 400, height: 300, crop: :fill) %>
    <% end %>
-<li>Treehouse Address --> 🏡 <%= @tree.address %></li>
-<li>Price --> 💰 £ <%= @tree.price %></li>
-<li>Description --> 📖 <%= @tree.description %></li>
-<li>Number of Guests --> 👩🏻‍🤝‍👨🏼 <%= @tree.number_of_guests %></li>
+<li>🏡 <%= @tree.address %></li>
+<li>💰 £ <%= @tree.price %></li>
+<li>📖 <%= @tree.description %></li>
+<li> 👩🏻‍🤝‍👨🏼 <%= @tree.number_of_guests %></li>
 </ul>
   </div>
