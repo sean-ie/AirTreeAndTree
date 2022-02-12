@@ -16,9 +16,9 @@ class TreesController < ApplicationController
     @tree.user = current_user
     if @tree.save
       redirect_to trees_path
-   else
-     render :new
-   end
+    else
+      render :new
+    end
   end
 
   def show

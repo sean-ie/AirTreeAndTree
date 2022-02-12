@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_05_152707) do
+ActiveRecord::Schema.define(version: 2022_02_12_123432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,10 @@ ActiveRecord::Schema.define(version: 2022_02_05_152707) do
     t.datetime "end_date", precision: 6
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.bigint "tree_id"
+    t.index ["tree_id"], name: "index_bookings_on_tree_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "trees", force: :cascade do |t|
