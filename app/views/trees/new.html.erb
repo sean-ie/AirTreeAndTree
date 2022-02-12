@@ -1,10 +1,9 @@
-<h1>Create a new Treehouse</h1>
-<%= simple_form_for [ @tree ] do |f| %>
-<%= f.input :name %>
-<%= f.input :description %>
-<%= f.input :address %>
-<%= f.input :price %>
-<%= f.input :number_of_guests %>
-<%= f.submit "Submit", class: "btn btn-primary" %>
-<% end %>
-
+<div class="container tree-new">
+  <div class="tree-new-form"> 
+    <h2>Create a new Treehouse</h2>
+    <%= render "form", tree: @tree %>
+  </div>
+  <div class="link-tree-new">
+    <%= link_to "Back", trees_path, class: "btn btn-success" %>
+  </div>
+</div>
