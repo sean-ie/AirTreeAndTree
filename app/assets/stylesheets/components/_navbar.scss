@@ -2,7 +2,7 @@
   justify-content: space-between;
   background: white;
   opacity: 0.6;
-  border: solid; color: aqua;
+  // border: solid; color: aqua;
   position: absolute;
   top: 0px;
   left: 0;
@@ -10,10 +10,34 @@
   z-index: 1;
 }
 
+
 .navbar-tree .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-tree .navbar-brand img {
   width: 40px;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+  border: solid; color: green;
+}
+
+a:hover {
+  // background-color: gray;
+  transition: 1.1s;
+  text-decoration: none;
+  color: aqua;
+}
+
+.btn-red:hover {
+  transition: 1.1s;
+  color: aqua;
+}
+
+
+.link-font {
+  color: black;
 }
