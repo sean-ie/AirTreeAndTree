@@ -1,7 +1,7 @@
 class TreesController < ApplicationController
 
   before_action :find_tree, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @trees = Tree.all
