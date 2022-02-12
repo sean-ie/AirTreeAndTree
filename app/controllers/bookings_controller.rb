@@ -16,7 +16,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     @booking.tree = Tree.find(params[:tree_id])
-    @booking.save!  
+    @booking.save!
   end
 
   def destroy
