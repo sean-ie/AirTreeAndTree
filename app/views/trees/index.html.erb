@@ -1,14 +1,10 @@
-  <div class="container">
+  <div class="main-container">
     <% @trees.each do |tree| %>
-      <div class="card">
+      <div class="card" style=" background-image: url('<%= cl_image_path(tree.photo.key) %>'); background-position: center; background-size: cover;">
         <div class="card-pic">
-          <% if tree.photo.attached? %>
-          <%= cl_image_tag(tree.photo.key) %>
         </div>
-        <% end %>
         <div class="card-content">
-          <p><%= tree.name  %></p>
-          <p><%= tree.description %></p>
+          <h1><%= tree.name  %></h1>
           <p>Number of Guests: <%= tree.number_of_guests %></p>
           <p>Price: <%= tree.price %></p>
           <p>Rating: <%= tree.rating %></p>
